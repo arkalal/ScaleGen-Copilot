@@ -9,16 +9,29 @@ type Props = {
   emptyCompnent?: React.ReactNode;
 };
 
-export function EmptyBlock({ Imagesize = 60, children, className, emptyCompnent, imageUrl }: Props) {
+export function EmptyBlock({
+  Imagesize = 60,
+  children,
+  className,
+  emptyCompnent,
+  imageUrl,
+}: Props) {
   return (
-    <div className={cn("flex-center flex-col gap-2 py-4 animate-in fade-in", className)}>
-      {emptyCompnent ?? <Image
-        src={imageUrl ?? "/random_icons_2.svg"}
-        width={Imagesize}
-        height={Imagesize}
-        alt="Empty Icon"
-        className="aspect-square"
-      />}
+    <div
+      className={cn(
+        "flex-center flex-col gap-2 py-4 animate-in fade-in",
+        className,
+      )}
+    >
+      {emptyCompnent ?? (
+        <Image
+          src={imageUrl ?? "/random_icons_2.svg"}
+          width={Imagesize}
+          height={Imagesize}
+          alt="Empty Icon"
+          className="aspect-square"
+        />
+      )}
       {children}
     </div>
   );

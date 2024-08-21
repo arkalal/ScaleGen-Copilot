@@ -18,7 +18,7 @@ export default async function HomePage() {
         <div className="flex flex-1 items-center justify-between">
           <div>
             <h1 className="text-lg font-bold text-accent-foreground">
-              All Copilots ScaleGenAI ✨
+              All ScaleGenAI Copilots ✨
             </h1>
           </div>
           <div className="space-x-2">
@@ -43,7 +43,7 @@ export default async function HomePage() {
                 </p>
               </div>
               <Button asChild>
-                <Link href="https://opencopilot.so/#tuts">Learn</Link>
+                {/* <Link href="https://opencopilot.so/#tuts">Learn</Link> */}
               </Button>
             </div>
             <CloseBtn className="absolute -right-1 -top-1 rounded-full border border-border bg-white p-1 opacity-0 shadow group-hover:opacity-100 ">

@@ -35,12 +35,12 @@ export function CopilotsContainer() {
         <Loading />
       </div>
     );
-    // when the server is down
-  if (copilots?.status && copilots.status.toString().startsWith('50')){
+  // when the server is down
+  if (copilots?.status && copilots.status.toString().startsWith("50")) {
     return (
       <div className="flex-center py-4">
         <p className="text-center text-gray-400">
-        we are facing high load at the moment, please give us some time
+          we are facing high load at the moment, please give us some time
         </p>
       </div>
     );
@@ -63,15 +63,11 @@ export function CopilotsContainer() {
       )}
     </EmptyBlock>
   ) : (
-    <div className="grid gap-4 py-4 grid-cols-12 copilot__container">
+    <div className="copilot__container grid grid-cols-12 gap-4 py-4">
       {orderByCreatedAt($copilots).map((copilot, index) => {
         return (
-          <AnimatePresence
-            key={copilot.id}>
-              <CopilotCard
-                copilot={copilot}
-                index={index}
-              />
+          <AnimatePresence key={copilot.id}>
+            <CopilotCard copilot={copilot} index={index} />
           </AnimatePresence>
         );
       })}

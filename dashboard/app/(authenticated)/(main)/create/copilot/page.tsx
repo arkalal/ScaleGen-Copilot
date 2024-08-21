@@ -164,12 +164,13 @@ export default function CreateCopilotPage() {
                 />
               </div>
             </DialogContent>
-            <DialogTrigger asChild>
+
+            {/* <DialogTrigger asChild>
               <Button variant="secondary" className="flex-center gap-2">
                 Watch video tutorial
                 <FileVideo className="h-5 w-5" />
               </Button>
-            </DialogTrigger>
+            </DialogTrigger> */}
           </Dialog>
         </div>
       </HeaderShell>
