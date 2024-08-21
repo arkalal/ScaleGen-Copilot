@@ -17,7 +17,7 @@ function Roadmap({ items }: Props) {
             <div className="absolute left-0 ml-2.5 h-full w-0.5 translate-x-px translate-y-3 self-start bg-accent group-last-of-type/item:hidden" />
 
             <div className="absolute left-0 rounded-full">
-              <span className="flex-center p-1 rounded-full bg-primary">
+              <span className="flex-center rounded-full bg-primary p-1">
                 <Check className="h-4 w-4 text-white" />
               </span>
             </div>
@@ -26,7 +26,7 @@ function Roadmap({ items }: Props) {
               {label}
             </h3>
           </div>
-          <div className="pl-9 mb-3 text-sm group-last-of-type/item:mb-0">
+          <div className="mb-3 pl-9 text-sm group-last-of-type/item:mb-0">
             {description}
           </div>
         </li>

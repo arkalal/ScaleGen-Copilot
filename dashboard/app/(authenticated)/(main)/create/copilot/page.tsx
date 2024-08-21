@@ -16,6 +16,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { SetCopilotName } from "./SetCopilotNameStep";
 import { DefineActionsStep } from "./DefineActionsStep";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function Header() {
   const { stepCount, activeStep, goToStep } = useWizard();
@@ -64,7 +65,7 @@ function IntroStep() {
   return (
     <motion.div>
       <h2 className="mb-6 text-3xl font-bold text-accent-foreground">
-        Let's create your own product copilot 🔥
+        Let's create your own ScaleGenAI copilot 🚀
       </h2>
       <p className="mb-2 font-medium">And here how we are going to do it:</p>
       <div className="my-6 px-1.5">
@@ -89,7 +90,12 @@ function IntroStep() {
         />
       </div>
       <div className="flex items-center justify-end">
-        <Button onClick={nextStep}>Let's do it!</Button>
+        <Button
+          className="bg-[#2e87d9] text-white hover:bg-[#0c66b9]"
+          onClick={nextStep}
+        >
+          Let's do it!
+        </Button>
       </div>
     </motion.div>
   );

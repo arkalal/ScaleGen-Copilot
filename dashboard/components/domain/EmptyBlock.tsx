@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import scaleGenLogo from "../../assets/images/sg-logo.png";
 type Props = {
   Imagesize?: number;
   children?: React.ReactNode;
@@ -25,7 +26,7 @@ export function EmptyBlock({
     >
       {emptyCompnent ?? (
         <Image
-          src={imageUrl ?? "/random_icons_2.svg"}
+          src={imageUrl ?? scaleGenLogo}
           width={Imagesize}
           height={Imagesize}
           alt="Empty Icon"

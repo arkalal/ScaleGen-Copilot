@@ -52,7 +52,11 @@ export function CopilotsContainer() {
           <p className="text-center text-gray-400">
             You don't have any copilots yet
           </p>
-          <Button size="sm" asChild>
+          <Button
+            className="bg-[#2e87d9] text-white hover:bg-[#0c66b9]"
+            size="sm"
+            asChild
+          >
             <Link href="/create/copilot">Create a new copilot</Link>
           </Button>
         </>

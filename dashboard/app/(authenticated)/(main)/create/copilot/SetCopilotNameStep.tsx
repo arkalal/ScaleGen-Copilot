@@ -61,6 +61,7 @@ export function SetCopilotName() {
           onClick={handleCreateCopilot}
           disabled={!copilot_name}
           loading={value.loading}
+          className="bg-[#2e87d9] text-white hover:bg-[#0c66b9]"
         >
           Let's do it!
         </Button>
