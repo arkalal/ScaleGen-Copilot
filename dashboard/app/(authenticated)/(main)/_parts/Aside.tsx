@@ -21,9 +21,9 @@ export default function Aside() {
         <div className="flex flex-col items-center gap-2 space-y-1 p-2">
           <CopilotLayoutNavLink IconComponent={Bot} label="Copilots" href="/" />
 
-          {/* <Tooltip content={<>Tutorials</>} side="right">
+          <Tooltip content={<>Tutorials</>} side="right">
             <Link
-              href="https://opencopilot.so/#tuts"
+              href="https://www.scalegen.ai/"
               target="_blank"
               className={cn(
                 "text-accent-foreground/50 hover:bg-accent hover:text-primary",
@@ -35,7 +35,7 @@ export default function Aside() {
           </Tooltip>
           <Tooltip content={<>Tutorials</>} side="right">
             <Link
-              href="https://github.com/openchatai/opencopilot"
+              href="https://github.com/arkalal/ScaleGen-Copilot?tab=readme-ov-file"
               target="_blank"
               className={cn(
                 "text-accent-foreground/50 hover:bg-accent hover:text-primary",
@@ -44,7 +44,7 @@ export default function Aside() {
             >
               <Github className="h-5 w-5" />
             </Link>
-          </Tooltip> */}
+          </Tooltip>
         </div>
       </div>
 
