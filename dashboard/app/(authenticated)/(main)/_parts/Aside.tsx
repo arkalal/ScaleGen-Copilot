@@ -35,7 +35,7 @@ export default function Aside() {
           </Tooltip>
           <Tooltip content={<>Tutorials</>} side="right">
             <Link
-              href="https://github.com/arkalal/ScaleGen-Copilot?tab=readme-ov-file"
+              href=""
               target="_blank"
               className={cn(
                 "text-accent-foreground/50 hover:bg-accent hover:text-primary",
